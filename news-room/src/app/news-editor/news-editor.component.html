@@ -1,0 +1,23 @@
+<div class="form">
+  <p>
+    <label>
+      Tytuł:
+      <input [(ngModel)]="news.title" type="text" />
+    </label>
+  </p>
+  <p>
+    <label>
+      Treść:
+      <textarea [(ngModel)]="news.content"></textarea>
+    </label>
+  </p>
+  <p>
+    <label>
+      imgUrl:
+      <textarea [(ngModel)]="news.imageURL"></textarea>
+    </label>
+  </p>
+  <p>
+    <button (click)="addNewItem()"[disabled]="!news.title || !news.content">dodaj</button>
+  </p>
+</div>

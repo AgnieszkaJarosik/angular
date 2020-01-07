@@ -4,7 +4,7 @@ export class NewsData {
   public content: string;
   public imageURL: string;
 
-  constructor(id, title, content, imageURL){
+  constructor(id:number , title: string, content: string, imageURL: string){
     this.id = id,
     this.title = title,
     this.content = content,

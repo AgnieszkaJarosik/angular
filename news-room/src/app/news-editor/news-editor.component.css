@@ -1,15 +1,15 @@
-.form {
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  border-radius: 5px;
-  padding: 20px;
+.container {
+  max-width: 30%;
+  min-width: 25%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 input, textarea, button {
-  width : 250px;
-  height: 30px;
-  margin: 0;
+  width : 180px;
+  height: 50px;
   box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
 }

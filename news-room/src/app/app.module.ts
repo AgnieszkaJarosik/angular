@@ -6,13 +6,17 @@ import { NewsListComponent } from './news-list/news-list.component';
 import { NewsItemComponent } from './news-item/news-item.component';
 import { NewsEditorComponent } from './news-editor/news-editor.component';
 import { FormsModule } from '@angular/forms';
+import { NewsRefreshComponent } from './news-refresh/news-refresh.component';
+import { SortByVotesPipe } from './sort-by-votes.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsListComponent,
     NewsItemComponent,
-    NewsEditorComponent
+    NewsEditorComponent,
+    NewsRefreshComponent,
+    SortByVotesPipe
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,10 @@
-<div class="editor">
-  <app-news-editor (onAdd)="addItem($event)"></app-news-editor>
-</div>
-<div class="list">
-  <ul>
-    <li *ngFor="let item of news; let i=index">
-      <app-news-item [item]="item" (onRemove)="removeItem(i)"></app-news-item>
+<ul>
+    <li *ngFor="let item of news | sortByVotes; let i=index">
+        <app-news-item [news]="item" [index]="i" >
+        </app-news-item>
     </li>
-  </ul>
-  <button (click)="ngOnInit()" *ngIf="news.length <= 0">zainicjuj</button>
-</div>
+</ul>
+    
+<button (click)="initializeNews()"
+    *ngIf="news?.length <= 0">zainicjuj</button>
+

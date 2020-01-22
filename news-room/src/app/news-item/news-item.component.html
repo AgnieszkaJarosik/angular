@@ -1,7 +1,11 @@
-<div class="news-item">
-  <h3>{{  item.title }}</h3>
-  <img [src]="item.imageURL" width="400" />
-  <p>{{  item.content }}</p>
-  <button (click)="remove()">usuń</button>
+<div  [className]="index%2==0 ? 'news-item grey' : 'news-item white'" >
+    <h3 class="title">{{ news.title }}</h3>
+    <img class="image" [src]="news.imageURL" />
+    <p class="content">{{  news.content }}</p>
+    <div class="rate">
+        <div>{{news.votes}}</div>
+        <button (click)="ratePlus()">+</button>
+        <button (click)="rateMinus()" [disabled]="news.votes===0">-</button>
+    </div>
+    <button (click)="remove()">usuń</button>
 </div>
-

@@ -1,7 +1,19 @@
-.app {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
+.container {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.buttons {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.news {
+  grid-row-start: 1;
+  grid-row-end: auto;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
